@@ -1,0 +1,23 @@
+<div class="search-container">
+
+    <div class="input-container">
+
+        <form [formGroup]="searchForm">
+            <input  type="text"
+                    placeholder="Buscar..."
+                    formControlName="searchInput"
+                    (keyup.enter)="search( searchForm.value )">
+                    
+                    
+                    
+        </form>
+        
+        <button class="btn-donate"
+                type="submit"
+                (click)="search( searchForm.value )">
+                <span>Buscar</span>
+        </button>
+        
+    </div>
+
+</div>
